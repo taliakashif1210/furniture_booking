@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login & Signup</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+   
+   <div id="login-form-wrapper">
+      <div class="login-form">
+         <h1>Login</h1>
+         <form>
+            <input type="email" name="emai" id="login-email" placeholder="Email" required="required" />
+            <input type="password" name="password" id="login-password" placeholder="Password" required="required" />
+            <button type="submit" class="login-btn">Login</button>
+         </form>
+         <button onclick="showSignupForm()">Signup</button>
+      </div>
+   </div>
+
+   <div id="signup-form-wrapper" style="display: none;">
+      <div class="signup-form">
+         <h1>Signup</h1>
+         <form>
+            <input type="text" name="name" id="signup-name" placeholder="Name" required="required" />
+            <input type="email" name="email" id="signup-email" placeholder="Email" required="required" />
+            <input type="password" name="password" id="signup-password" placeholder="Password" required="required" />
+            <input type="password" name="confirm_password" id="signup-confirm-password" placeholder="Confirm Password" required="required" />
+            <button type="submit" class="login-btn">Signup</button>
+         </form>
+         <button onclick="showLoginForm()">Login</button>
+      </div>
+   </div>
+
+   <script>
+      function showSignupForm() {
+         document.getElementById('login-form-wrapper').style.display = 'none';
+         document.getElementById('signup-form-wrapper').style.display = 'block';
+      }
+
+      function showLoginForm() {
+         document.getElementById('login-form-wrapper').style.display = 'block';
+         document.getElementById('signup-form-wrapper').style.display = 'none';
+      }
+   </script>
+</body>
+</html>

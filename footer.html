@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        .footer {
+            background: #f9f9f9;
+            padding: 50px 20px 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin-left: 50px;
+            margin-right: 50px;
+            gap: 90px;
+        }
+
+        /* Brand */
+        .footer-brand {
+            flex: 1 1 250px;
+            max-width: 300px;
+        }
+
+        .brand-logo-name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo {
+            width: 50px;
+        }
+
+        .footer-brand h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 10px;
+            color: gray;
+        }
+
+        /* Links */
+        .footer-links {
+            flex: 1 1 150px;
+        }
+
+        .footer-links h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            text-decoration: none;
+            color: gray;
+            transition: color 0.3s;
+        }
+
+        .footer-links ul li a:hover {
+            color: #555;
+        }
+
+        /* Socials (Right section) */
+        .footer-socials {
+            flex: 1 1 250px;
+            max-width: 300px;
+        }
+
+        .footer-socials h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .footer-socials p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: gray;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;              /* space between icons */
+            align-items: center;
+        }
+
+        .social-icons img {
+            width: 28px;            /* adjust size (try 24–32px) */
+            height: 28px;
+            object-fit: contain;    /* keep proportions */
+            cursor: pointer;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);  /* zoom effect */
+            opacity: 0.8;           /* subtle fade on hover */
+        }
+
+
+            /* Bottom */
+        .footer-bottom {
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        .footer-bottom-links a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #555;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom-links a:hover {
+            color: #000;
+        }
+    </style>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+        
+            <!-- Left: Brand -->
+            <div class="footer-brand">
+                <div class="brand-logo-name">
+                <img src="/assets/logoFooter.png" alt="Royal Furnitures Logo" class="footer-logo">
+                <h2>Royal Furnitures</h2>
+                </div>
+                <p>Discover timeless designs and elegant furniture pieces that bring comfort and luxury to your home.</p>
+            </div>
+
+            <!-- Middle: Links -->
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Information</a></li>
+                    <li><a href="#">Cancellation Options</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Socials instead of newsletter -->
+            <div class="footer-socials">
+                <h3>Stay Updated</h3>
+                <p>Follow us on social media for inspiration and offers.</p>
+                <div class="social-icons">
+                    <img src="../assets/instagram.jpg" alt="insagram Logo"/>
+                    <img src="../assets/facebook.jpg" alt="facebook Logo"/>
+                    <img src="../assets/twitter.jpg" alt="twitter Logo"/>
+                    <img src="../assets/whatsapp.jpg" alt="whatsapp Logo"/>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>© 2025 Royal Furnitures. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments and Suggestions</title>
+    <link rel="stylesheet" href="./suggestions.css">
+</head>
+<body>
+    <!-- Navbar placeholder -->
+    <div id="navbar"></div>
+
+    <div class="background-wrapper">
+        <div class="container">
+            <center><h1>Customer Feedback</h1></center>
+            <p>We value your opinion. Please share your comments, suggestions, and demographic information about our furniture store.</p>
+
+            <form>
+                <!-- Row 1: Name + Email -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                </div>
+
+                <!-- Row 2: Age + Gender -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" placeholder="Your age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Row 3: Comments -->
+                <div class="form-group">
+                    <label for="comments">Comments and Suggestions:</label>
+                    <textarea id="comments" name="comments" placeholder="Write your feedback here..." rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navbar placeholder -->
+  <div id="footer"></div>
+
+    <!-- Load Components -->
+  <script src="../js/loadComponents.js"></script>
+</body>
+</html>

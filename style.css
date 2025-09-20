@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.container {
+    background-color: #ccc;
+    margin: 30px;              /* space between navbar and content */
+    padding: 20px;
+    width: calc(100% - 100px);
+    height: calc(100vh - 100px);
+    position: relative;
+}
+
+/* Grey box holding the image */
+.blue-box {
+    background-color: #A9A9A9;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-container {
+    margin: 10px;
+    height: calc(100% - 20px);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Black sale box */
+.black-box {
+    background-color: #4A4A4A;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 410px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 2; /* keep it above other elements */
+}
+
+/* Brand name + description */
+.text-block {
+    position: relative;
+    margin-top: 230px;   /* push below the black box */
+    margin-left: 20px;
+    color: #333;
+    max-width: 400px;
+}
+
+h1, p {
+    margin: 0;
+}

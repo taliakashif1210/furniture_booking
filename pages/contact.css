@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Background */
+.background-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../assets/living.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center Glass Box */
+.contact-container {
+  background: rgba(255, 255, 255, 0.8); /* frosted glass look */
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 28%;
+  max-width: 800px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  opacity: 0.8;
+}
+
+/* Social Icons Row */
+.social-row {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 18px;
+  color: #333;
+}
+
+.social-item i {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 6px 0 10px 0;
+  font-size: 16px;
+}
